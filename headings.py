@@ -56,6 +56,7 @@ for site, centroid in centroids.items():
         counter_success += 1
     except:
         site_dat.loc[site, 'heading'] = np.nan
+        print("Unexpected error:", sys.exc_info()[0])
         counter_fail += 1
     time.sleep(0.5)
     if((counter_success + counter_fail) % 50 == 0):
