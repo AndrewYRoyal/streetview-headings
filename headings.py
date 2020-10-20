@@ -5,6 +5,7 @@ import pyproj
 import json
 import argparse
 import time
+import sys
 
 ## Pricing:
           ## $0.007 per photo
