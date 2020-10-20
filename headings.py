@@ -59,7 +59,7 @@ for site, centroid in centroids.items():
         site_dat.loc[site, 'heading'] = np.nan
         print("Unexpected error:", sys.exc_info()[0])
         counter_fail += 1
-    time.sleep(1)
+    time.sleep(2)
     if((counter_success + counter_fail) % 50 == 0):
         print('{} successful, {} failed'.format(counter_success, counter_fail))
         time_elapsed = start_time - time.time()
